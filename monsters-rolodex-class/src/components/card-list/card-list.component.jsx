@@ -21,8 +21,8 @@ class CardList extends Component {
 
     return (
       <div className="card-list">
-        {monsters.map((monster) => {
-          return <Card monster={monster} />;
+        {monsters.map((monster, index) => {
+          return <Card key={index} monster={monster} />;
         })}
       </div>
     );
